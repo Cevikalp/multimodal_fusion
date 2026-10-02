@@ -1,4 +1,4 @@
-# multimodal_fusion
+# Multimodal Transformer Fusion
 This repository  introduces a transformer-based multimodal fusion architecture that integrates high-level visual and skeleton tokens extracted by  video and skeleton activity classification transformers.
 
 # Multimodal Transformer Fusion of Skeleton and Multi-View Video Data for Arm-Action Recognition in Real-World Shop Environment
