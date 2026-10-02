@@ -47,3 +47,22 @@ viewpoints can provide additional information for robust arm-action classificati
 				fused using the proposed multimodal fusion transformer, which learns complementary information across modalities. Finally, the fused representation is utilized to classify arm actions.
 
 
+**Data Collection:** The dataset was collected in a real retail hat shop located in Osaka, Japan. Data acquisition was conducted over 37 recording days between late 2024 and early 2025. 
+To capture customer behavior throughout the store, a synchronized multi-view sensing system consisting of 19 Microsoft Azure Kinect DK RGB-D cameras was installed. 
+The sensors were mounted on ceilings and shelves to provide overlapping coverage of customer activity areas. 
+Layout of the hat shop from a bird’s-eye perspective, showing the deployment of 19 cameras and their coverage zones is given below. 
+
+Each Azure Kinect sensor estimated a 32-joint three-dimensional skeleton for every detected customer. The skeletons from multiple cameras were transformed into a 
+common world coordinate system and merged into continuous customer trajectories using an offline tracking framework. In addition to skeleton data, RGB videos were 
+recorded and used for manual annotation of customer actions. The video recordings provided detailed visual information about customer interactions with merchandise, 
+while the skeletons provided a privacy-preserving representation of body movements.
+
+A total of 904 candidate customer visits were initially extracted from the recordings. After manual review, sessions involving groups, incomplete recordings, 
+extremely short visits, and customers remaining outside the primary hat-shopping area were excluded. The final dataset contains 115 complete sessions of individual 
+customers performing arm actions, each recorded continuously from store entry to exit.
+
+Four arm-action categories were defined:
+*Pick or Place Hat/Tie:* The customer reaches toward a shelf or counter to pick up or place a hat or a tie.
+*Holding Hat/Tie:* The customer holds a hat or tie in one or both hands in front of the body.
+*Wear or Take Off Hat:* The customer raises or lowers the arms to wear, remove, or adjust a hat on the head.
+*Idle:* All remaining arm states, including standing with arms at the sides, hands in pockets, crossed arms, phone usage, or handling non-hat objects.
