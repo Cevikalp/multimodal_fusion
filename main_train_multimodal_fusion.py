@@ -9,13 +9,12 @@ import glob
 import h5py
 from SkateFormer import SkateFormer_
 from hatshop_dataset_multiple_cameras import HatShopSkateFormerDatasetPickleMultiple
-from fusion_models import  MultimodalFusionTransformer, VideoMAEActivityClassifierPretrained, SingleQueryCameraFusion, FocalLoss
+from fusion_models import  MultimodalFusionTransformer, VideoMAEActivityClassifierPretrained, SingleQueryCameraFusion, CameraAttentionFusion, FocalLoss
 from sklearn.metrics import accuracy_score, f1_score
 from pathlib import Path
 import numpy as np
 
-
-    
+   
 # Data Paths
 # train
 skeleton_data_path = '/mnt/data2/skeletondata_new'
@@ -251,6 +250,7 @@ def train():
 
     model_visual = model_visual.to(device)
     camera_token_fusion_model = SingleQueryCameraFusion().to(device)
+   # camera_token_fusion_model = CameraAttentionFusion().to(device)
 
     # fusion Model
     model_fusion = MultimodalFusionTransformer(num_classes=4)
