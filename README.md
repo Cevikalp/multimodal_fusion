@@ -46,7 +46,8 @@ viewpoints can provide additional information for robust arm-action classificati
 				fused using the proposed multimodal fusion transformer, which learns complementary information across modalities. Finally, the fused representation is utilized to classify arm actions.
 
 
-**Data Collection:** The dataset was collected in a real retail hat shop located in Osaka, Japan. Data acquisition was conducted over 37 recording days between late 2024 and early 2025. 
+# 1. Data Collection 
+The dataset was collected in a real retail hat shop located in Osaka, Japan. Data acquisition was conducted over 37 recording days between late 2024 and early 2025. 
 To capture customer behavior throughout the store, a synchronized multi-view sensing system consisting of 19 Microsoft Azure Kinect DK RGB-D cameras was installed. 
 The sensors were mounted on ceilings and shelves to provide overlapping coverage of customer activity areas. 
 Layout of the hat shop from a bird’s-eye perspective, showing the deployment of 19 cameras and their coverage zones is given below. 
@@ -73,3 +74,28 @@ Four arm-action categories were defined:
 **Wear or Take Off Hat:** The customer raises or lowers the arms to wear, remove, or adjust a hat on the head.
 
 **Idle:** All remaining arm states, including standing with arms at the sides, hands in pockets, crossed arms, phone usage, or handling non-hat objects.
+
+# 2. Requirements
+## Environments
+Following packages are required for this repo.
+
+    - python 3.10.18+
+    - torch  2.5+
+    - torchvision 0.19+ 
+    - CUDA 12.1+
+    - cython 3.1.4+
+    - scikit-learn 1.3+
+    - numpy 2.2.6+
+    - tqdm 4.67.3
+    - matplotlib 3.7.5
+    - opencv-contrib-python 5.0.0.93
+    - pillow 12.2+
+    - pytorch-cuda 12.4
+    - pycocotools 2.0.11+
+    - scipy 1.15.3+
+    - scikit-learn 1.7.2+
+    - scikit-image 0.25.2+
+    - seaborn 0.13.2
+    - torchvision 0.20.1+cu121
+    - transformers 4.4+  
+
