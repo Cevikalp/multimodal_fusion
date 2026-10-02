@@ -41,7 +41,6 @@ viewpoints can provide additional information for robust arm-action classificati
 
 <img width="1790" height="597" alt="Frame 1" src="https://github.com/user-attachments/assets/193a77ec-d83f-4b2c-82b1-a8406abab3b2" />
 
-
 **Fig 1.** Illustration of the proposed multimodal fusion transformer. The proposed system takes synchronized video frames and skeleton sequences as input. These modalities 
 				are processed by pre-trained transformer-based backbones to extract high-level token representations. The resulting visual and skeletal tokens are then 
 				fused using the proposed multimodal fusion transformer, which learns complementary information across modalities. Finally, the fused representation is utilized to classify arm actions.
@@ -51,6 +50,10 @@ viewpoints can provide additional information for robust arm-action classificati
 To capture customer behavior throughout the store, a synchronized multi-view sensing system consisting of 19 Microsoft Azure Kinect DK RGB-D cameras was installed. 
 The sensors were mounted on ceilings and shelves to provide overlapping coverage of customer activity areas. 
 Layout of the hat shop from a bird’s-eye perspective, showing the deployment of 19 cameras and their coverage zones is given below. 
+
+<img width="1132" height="713" alt="HatShop_Layout" src="https://github.com/user-attachments/assets/738590cc-4b52-4829-acdd-42a0f8f03fd2" />
+
+**Fig 2.** Bird’s-eye view of the  hat shop showing the locations of the 19 cameras and their respective fields of view.
 
 Each Azure Kinect sensor estimated a 32-joint three-dimensional skeleton for every detected customer. The skeletons from multiple cameras were transformed into a 
 common world coordinate system and merged into continuous customer trajectories using an offline tracking framework. In addition to skeleton data, RGB videos were 
