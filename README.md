@@ -39,7 +39,8 @@ we evaluate different strategies for aggregating visual information from multipl
 The results demonstrate the complementary nature of skeleton and visual modalities and show that incorporating synchronized observations from multiple camera 
 viewpoints can provide additional information for robust arm-action classification in realistic retail environments.
 
-<img width="2164" height="713" alt="fig1" src="https://github.com/user-attachments/assets/baf2d2e0-22c9-4ad4-81a9-c748e463872f" />
+<img width="1790" height="597" alt="Frame 1" src="https://github.com/user-attachments/assets/193a77ec-d83f-4b2c-82b1-a8406abab3b2" />
+
 
 **Fig 1.** Illustration of the proposed multimodal fusion transformer. The proposed system takes synchronized video frames and skeleton sequences as input. These modalities 
 				are processed by pre-trained transformer-based backbones to extract high-level token representations. The resulting visual and skeletal tokens are then 
