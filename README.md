@@ -99,3 +99,16 @@ Following packages are required for this repo.
     - torchvision 0.20.1+cu121
     - transformers 4.4+  
 
+# 2. Training & Evaluation
+## Training Multimodal Transformer Fusion Model
+For training multimodal transformer fusion model using skeleton and multiple camera views, simply run  **'main_train_multimodal_fusion.py'**. This script initializes and trains a  
+multimodal fusion model and a vision fusion model from scratch with randomly initialized weights. There are two options for vision fusion. Single-Query Camera Fusion is the best 
+choice and it is the default mode. To choose attention based multi-camera fusion just activate the line 253  ''camera_token_fusion_model = CameraAttentionFusion().to(device)'' and
+remove line 252.
+## Training Multi-Camera Visual Token Fusion Models
+For training multi-camera visual toke fusion models, simply run  **'main_train_visual_fusion.py'**. You can choose SingleQueryCameraFusio or CameraAttentionFusion models for training. 
+Single-Query based fusion yields better accuracies and it converges much faster compared to  attention based multi-camera fusion model. VideoMAE V2 model is frozen and not updated, only 
+fusion models are trained.
+## Training Skeleton Activity Classification Model
+Simply run **'main_train_skeleton.py'**. It fine-tunes from pre-trained Skate-former model. First, the backbone is frozen and only new added classification head is trained for 20 epochs. Then, 
+entire network is trained for addition 80 epochs for a much smaller learning rate.
