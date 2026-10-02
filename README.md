@@ -3,7 +3,7 @@ This repository  introduces a transformer-based multimodal fusion architecture t
 
 # Multimodal Transformer Fusion of Skeleton and Multi-View Video Data for Arm-Action Recognition in Real-World Shop Environment
 
-**Abstract:** Human arm-action recognition is a fundamental capability for automated retail environments and customer-aware robotic systems.  
+**Abstract:** Human arm-action recognition is a fundamental capability for automated retail environments and customer-aware robotic systems. 
 In real-world stores, recognizing fine-grained customer actions such as picking up, holding, or wearing merchandise is challenging 
 due to cluttered backgrounds, viewpoint variations, occlusions, and the subtle nature of arm movements. While RGB-based methods provide 
 rich appearance and contextual information, skeleton-based approaches offer robust representations of human motion and body pose. 
