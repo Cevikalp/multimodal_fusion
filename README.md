@@ -62,7 +62,11 @@ extremely short visits, and customers remaining outside the primary hat-shopping
 customers performing arm actions, each recorded continuously from store entry to exit.
 
 Four arm-action categories were defined:
-*Pick or Place Hat/Tie:* The customer reaches toward a shelf or counter to pick up or place a hat or a tie.
-*Holding Hat/Tie:* The customer holds a hat or tie in one or both hands in front of the body.
-*Wear or Take Off Hat:* The customer raises or lowers the arms to wear, remove, or adjust a hat on the head.
-*Idle:* All remaining arm states, including standing with arms at the sides, hands in pockets, crossed arms, phone usage, or handling non-hat objects.
+
+**Pick or Place Hat/Tie:** The customer reaches toward a shelf or counter to pick up or place a hat or a tie.
+
+**Holding Hat/Tie:** The customer holds a hat or tie in one or both hands in front of the body.
+
+**Wear or Take Off Hat:** The customer raises or lowers the arms to wear, remove, or adjust a hat on the head.
+
+**Idle:** All remaining arm states, including standing with arms at the sides, hands in pockets, crossed arms, phone usage, or handling non-hat objects.
