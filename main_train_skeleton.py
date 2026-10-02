@@ -211,7 +211,7 @@ def train():
 
     for epoch in range(epochs):
 
-        if epoch == 40:
+        if epoch == 20:
             print("Unfreezing entire model...")
 
             for param in model.parameters():
