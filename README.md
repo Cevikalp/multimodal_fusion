@@ -114,6 +114,25 @@ fusion models are trained.
 ## Training Skeleton Activity Classification Model
 Simply run **'main_train_skeleton.py'**. It fine-tunes from pre-trained Skate-former model. First, the backbone is frozen and only new added classification head is trained for 20 epochs. Then, 
 entire network is trained for addition 80 epochs for a much smaller learning rate.
-
 ### Results
 To reproduce the results given in the paper, run the script  **'main_test_multimodal_fusion.py'**.
+
+# 3. Pre-trained Models and Data
+## Data
+Due to the privacy issues, we cannot distribute the video frames. The skeleton data used in this study are gievn under the data directory. They are written in python pickle files.
+## Pre-trained Models
+For pre-trained models, please contact us using the email address given below.
+
+## Citation
+```bibtex
+@article{cevikalp2027,
+  author    = {Hakan Cevikalp and Drazen Brscic and Zulkafil Abbas and Takayuki Kanda},
+  title     = {Multimodal Transformer Fusion of Skeleton and Multi-View Video Data for Arm-Action Recognition in Real-World Shop Environment},
+  journal = {Pattern Recognition},
+  year      = {under review},
+}
+
+# Contact
+If you have any question about our work, please do not hesitate to contact us by email hakan.cevikalp@gmail.com.
+
+
