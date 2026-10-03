@@ -46,6 +46,7 @@ viewpoints can provide additional information for robust arm-action classificati
 				fused using the proposed multimodal fusion transformer, which learns complementary information across modalities. Finally, the fused representation is utilized to classify arm actions.
 
 <img width="2156" height="830" alt="vision_fusion" src="https://github.com/user-attachments/assets/44c363f2-6d13-4ef9-9875-62ee573d1018" />
+
 **Fig 2.** Illustration of the proposed multi-camera visual token fusion transformer.
 
 # 1. Data Collection 
