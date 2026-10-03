@@ -45,6 +45,9 @@ viewpoints can provide additional information for robust arm-action classificati
 				are processed by pre-trained transformer-based backbones to extract high-level token representations. The resulting visual and skeletal tokens are then 
 				fused using the proposed multimodal fusion transformer, which learns complementary information across modalities. Finally, the fused representation is utilized to classify arm actions.
 
+<img width="1441" height="604" alt="multimodal_visual_fusion_transformer" src="https://github.com/user-attachments/assets/79b6cc4a-6287-42fe-8b3b-0a6752e9e3de" />
+**Fig 2.** Illustration of the proposed multi-camera visual token fusion transformer.
+
 # 1. Data Collection 
 The dataset was collected in a real retail hat shop located in Osaka, Japan. Data acquisition was conducted over 37 recording days between late 2024 and early 2025. 
 To capture customer behavior throughout the store, a synchronized multi-view sensing system consisting of 19 Microsoft Azure Kinect DK RGB-D cameras was installed. 
@@ -53,7 +56,7 @@ Layout of the hat shop from a bird’s-eye perspective, showing the deployment o
 
 <img width="1132" height="713" alt="HatShop_Layout" src="https://github.com/user-attachments/assets/738590cc-4b52-4829-acdd-42a0f8f03fd2" />
 
-**Fig 2.** Bird’s-eye view of the  hat shop showing the locations of the 19 cameras and their respective fields of view.
+**Fig 3.** Bird’s-eye view of the  hat shop showing the locations of the 19 cameras and their respective fields of view.
 
 Each Azure Kinect sensor estimated a 32-joint three-dimensional skeleton for every detected customer. The skeletons from multiple cameras were transformed into a 
 common world coordinate system and merged into continuous customer trajectories using an offline tracking framework. In addition to skeleton data, RGB videos were 
