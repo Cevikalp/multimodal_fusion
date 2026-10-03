@@ -119,7 +119,8 @@ To reproduce the results given in the paper, run the script  **'main_test_multim
 
 # 3. Pre-trained Models and Data
 ## Data
-Due to the privacy issues, we cannot distribute the video frames. The skeleton data used in this study are gievn under the data directory. They are written in python pickle files.
+The dataset was collected in a real retail hat shop located in Osaka, Japan. Due to the privacy issues, we cannot distribute the video frames. However, the skeleton data used in this study are given under 
+the data directory. They are written in python pickle files.
 ## Pre-trained Models
 For pre-trained models, please contact us using the email address given below.
 
