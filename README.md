@@ -55,7 +55,7 @@ To capture customer behavior throughout the store, a synchronized multi-view sen
 The sensors were mounted on ceilings and shelves to provide overlapping coverage of customer activity areas. 
 Layout of the hat shop from a bird’s-eye perspective, showing the deployment of 19 cameras and their coverage zones is given below. 
 
-<img width="1132" height="713" alt="HatShop_Layout" src="https://github.com/user-attachments/assets/738590cc-4b52-4829-acdd-42a0f8f03fd2" />
+<img width="1132" height="713" alt="HatShop_Layout" src="https://github.com/user-attachments/assets/a660cd62-1deb-4b06-8237-55f0392f5934" />
 
 **Fig 3.** Bird’s-eye view of the  hat shop showing the locations of the 19 cameras and their respective fields of view.
 
