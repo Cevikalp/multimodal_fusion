@@ -50,7 +50,10 @@ viewpoints can provide additional information for robust arm-action classificati
 **Fig 2.** Illustration of the proposed multi-camera visual token fusion transformer.
 
 # 1. Data Collection 
-The dataset was collected in a real retail hat shop located in Osaka, Japan. Data acquisition was conducted over 37 recording days between late 2024 and early 2025. 
+The dataset was collected in a real retail hat shop located in Osaka, Japan. 
+The participants were ordinary walk-in customers visiting the store during normal operation, rather than recruited participants performing scripted actions. 
+The data collection protocol was approved by the Ethics Review Board of the Graduate School of Informatics, Kyoto University. Posters were displayed 
+in the store area to inform customers that data collection was taking place. Data acquisition was conducted over 37 recording days.
 To capture customer behavior throughout the store, a synchronized multi-view sensing system consisting of 19 Microsoft Azure Kinect DK RGB-D cameras was installed. 
 The sensors were mounted on ceilings and shelves to provide overlapping coverage of customer activity areas. 
 Layout of the hat shop from a bird’s-eye perspective, showing the deployment of 19 cameras and their coverage zones is given below. 
@@ -65,7 +68,7 @@ recorded and used for manual annotation of customer actions. The video recording
 while the skeletons provided a privacy-preserving representation of body movements.
 
 A total of 904 candidate customer visits were initially extracted from the recordings. After manual review, sessions involving groups, incomplete recordings, 
-extremely short visits, and customers remaining outside the primary hat-shopping area were excluded. The final dataset contains 115 complete sessions of individual 
+extremely short visits, and customers remaining outside the primary hat-shopping area were excluded. The final dataset used in this study contains 115 complete sessions of individual 
 customers performing arm actions, each recorded continuously from store entry to exit.
 
 Four arm-action categories were defined:
